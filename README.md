@@ -1,7 +1,8 @@
 # Currency Converter
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+![](https://img.shields.io/github/stars/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/forks/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/release/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/issues/monterey101/currencyconverter?style=social) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/monterey101/currencyconverter?style=social)
 
+__THIS IS A SIMULATOR AND DOES NOT MAKE REAL TRANSACTIONS__
 
 ## How it works
 
