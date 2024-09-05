@@ -1,0 +1,38 @@
+[
+  {
+    "user": "admin",
+    "symbol": "AUD",
+    "value": 0.6723,
+    "date": "Wed Sep 01 13:37:22 AEST 2024"
+  },
+  {
+    "user": "admin",
+    "symbol": "SGD",
+    "value": 0.7646,
+    "date": "Wed Sep 02 01:37:55 AEST 2024"
+  },
+  {
+    "user": "admin",
+    "symbol": "USD",
+    "value": 1.0,
+    "date": "Wed Sep 03 13:38:04 AEST 2024"
+  },
+  {
+    "user": "admin",
+    "symbol": "EUR",
+    "value": 1.1042,
+    "date": "Wed Sep 04 13:38:48 AEST 2024"
+  },
+  {
+    "user": "admin",
+    "symbol": "GBP",
+    "value": 1.3116,
+    "date": "Wed Sep 04 13:39:54 AEST 2024"
+  },
+  {
+    "user": "admin",
+    "symbol": "JPY",
+    "value": 0.0069,
+    "date": "Wed Sep 04 13:40:23 AEST 2024"
+  }
+]

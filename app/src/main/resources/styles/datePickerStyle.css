@@ -1,0 +1,66 @@
+.date-picker,
+.date-picker *.text-field {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: rgb(71, 71, 81);
+    -fx-border-color: rgb(71, 71, 81);
+    -fx-border-width: 0.5;
+    -fx-background-radius: 15;
+    -fx-font-size: 18px;
+    -fx-font-family: Arial;
+    -fx-prompt-text-fill: rgb(71, 71, 81);
+}
+
+.date-picker .arrow {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: white;
+    -fx-border-color: rgb(71, 71, 81);
+    -fx-border-width: 0;
+    -fx-font-family: Arial;
+}
+
+.date-picker .month-label,
+.date-picker .year-label {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: rgb(71, 71, 81);
+    -fx-font-family: Arial;
+}
+
+/* Styling the DatePicker pop-up calendar */
+.date-picker-popup,
+.date-picker-popup *.combo-box-popup,
+.date-picker-popup *.list-cell,
+.date-picker-popup .month-year-pane,
+.date-picker-popup .day-cell {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: rgb(71, 71, 81);
+    -fx-border-color: rgb(71, 71, 81);
+    -fx-border-width: 0;
+    -fx-font-family: Arial;
+}
+
+/* Styling the day cells in the calendar */
+.date-picker-popup .day-cell {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: rgb(71, 71, 81);
+    -fx-border-color: rgb(71, 71, 81);
+    -fx-border-width: 1;
+}
+
+.date-picker .date-picker-popup .day-cell:selected {
+    -fx-background-color: rgb(71, 124, 234);
+    -fx-text-fill: rgb(71, 71, 81);
+}
+
+/* Styling the month/year navigation pane */
+.date-picker-popup .month-year-pane {
+    -fx-background-color: rgb(21, 21, 29);
+    -fx-text-fill: rgb(71, 71, 81);
+    -fx-border-color: rgb(71, 71, 81);
+    -fx-border-width: 0;
+}
+
+.date-picker .day-cell:hover {
+    -fx-background-color: rgb(71, 124, 234);
+    -fx-text-fill: white;
+    /* Optional: Hover effect on days */
+}

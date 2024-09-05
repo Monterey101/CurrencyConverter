@@ -1,0 +1,19 @@
+[
+  {
+    "username": "admin",
+    "passwordHash": "123",
+    "balance": 1906.24,
+    "holdings": {
+      "AUD": 1000.483,
+      "USD": 1234.2343
+    }
+  },
+  {
+    "username": "test",
+    "passwordHash": "test",
+    "balance": 1000.0,
+    "holdings": {
+      "USD": 1000.0
+    }
+  }
+]

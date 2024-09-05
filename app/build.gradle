@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    implementation 'com.google.guava:guava:28.0-jre'
+    implementation 'org.processing:core:3.3.7'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.itextpdf:itext7-core:7.2.3'
+}
+
+javafx {
+    version = "22"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    mainClass = 'org.example.App'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.App'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// sourceSets {
+//     main {
+//         resources {
+//             srcDir 'src/main/resources'
+//         }
+//     }
+// }

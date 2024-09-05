@@ -1,0 +1,63 @@
+/* Styling the combo box dropdown */
+.combo-box {
+    -fx-background-color: rgb(21, 21, 29);
+    background-color: rgb(21, 21, 29);
+    -fx-text-fill: white;
+    -fx-border-color: rgb(71, 71, 81);
+    border-color: rgb(71, 71, 81);
+    -fx-border-width: 1;
+    border-width: 1;
+    -fx-background-radius: 15;
+    -fx-font-size: 18px;
+    font-size: 18px;
+    -fx-font-family: Arial;
+    font-family: Arial;
+    -fx-prompt-text-fill: white;
+}
+
+.combo-box-popup {
+    -fx-background-color: rgb(21, 21, 29);
+    background-color: rgb(21, 21, 29);
+    -fx-text-fill: white;
+    -fx-border-color: rgb(71, 71, 81);
+    border-color: rgb(71, 71, 81);
+    -fx-border-width: 1;
+    border-width: 1;
+    -fx-background-radius: 15;
+    -fx-font-size: 18px;
+    font-size: 18px;
+    -fx-font-family: Arial;
+    font-family: Arial;
+    -fx-prompt-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: rgb(21, 21, 29);
+    background-color: rgb(21, 21, 29);
+    -fx-control-inner-background: rgb(21, 21, 29);
+    -fx-border-color: rgb(71, 71, 81);
+    border-color: rgb(71, 71, 81);
+    -fx-border-width: 1;
+    border-width: 1;
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    font-size: 18px;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: rgb(21, 21, 29);
+    background-color: rgb(21, 21, 29);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    font-size: 18px;
+}
+
+.combo-box-popup .list-cell:filled:selected,
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: rgb(71, 124, 234);
+    background-color: rgb(71, 124, 234);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    font-size: 18px;
+}
