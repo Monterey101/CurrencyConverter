@@ -1,6 +1,10 @@
 # Currency Converter
 
-![](https://img.shields.io/github/stars/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/forks/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/release/monterey101/currencyconverter?style=social) ![](https://img.shields.io/github/issues/monterey101/currencyconverter?style=social) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/monterey101/currencyconverter?style=social)
+![](https://img.shields.io/github/stars/monterey101/currencyconverter) 
+![](https://img.shields.io/github/forks/monterey101/currencyconverter) 
+![](https://img.shields.io/github/release/monterey101/currencyconverter) 
+![](https://img.shields.io/github/issues/monterey101/currencyconverter) 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/monterey101/currencyconverter)
 
 __THIS IS A SIMULATOR AND DOES NOT MAKE REAL TRANSACTIONS__
 
@@ -54,7 +58,7 @@ $ ./gradlew test
 
 ## How to contribute
 
-Contributions should be done by cloning the repo via the `$ git clone` and creating a branch. Within this branch you can make changes. Once you have completed the feature, you can create a PR. An admin will decide whether to accept your changes and/or decide to close your branch.
+Contributions should be done by cloning the repo via the `$ git clone` command and creating a branch. Within this branch you can make changes. Once you have completed the feature, you can create a PR. An admin will decide whether to accept your changes and/or decide to close your branch.
 
 ## Depreciated Features
 
