@@ -144,10 +144,9 @@ public class SessionHandler {
     }
 
     public void attemptLogin(String username, String password) {
-        System.out.println(String.format("checking: %s and %s", username, password));
         if (checkCredentials(username, password)) {
             for (Session session : this.sessionList) {
-                if (session.getUsername().equals(username) && session.getPassword().equals(password)) {
+                if (session.getUsername().equals(username) && session.checkPassword(password)) {
                     this.currentSession = session;
                     break;
                 }
@@ -176,7 +175,9 @@ public class SessionHandler {
         // Create a new session for the user
         Session newSession = new Session();
         newSession.username = username;
-        newSession.passwordHash = password;
+        String[] hashAndSalt = Session.hashNewPassword(password);
+        newSession.passwordHash = hashAndSalt[0];
+        newSession.salt = hashAndSalt[1];
         newSession.balance = 100.00;
         newSession.holdings = new HashMap<>();
         newSession.holdings.put("USD", 100.00);
@@ -235,8 +236,7 @@ public class SessionHandler {
     private boolean checkCredentials(String username, String password) {
 
         for (Session session : this.sessionList) {
-            if (session.getUsername().equals(username) &&
-                    session.getPassword().equals(password)) {
+            if (session.getUsername().equals(username) && session.checkPassword(password)) {
                 return true;
             }
         }

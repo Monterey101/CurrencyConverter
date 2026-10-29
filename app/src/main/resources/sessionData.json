@@ -1,7 +1,8 @@
 [
   {
     "username": "admin",
-    "passwordHash": "123",
+    "passwordHash": "9fc3246fa1836818ef8781463cb8923535d851d18dcb7efb5949d3eedff664ae",
+    "salt": "062394ffc2a3a4cde51d2409f526bc9f",
     "balance": 1906.24,
     "holdings": {
       "AUD": 1000.483,
@@ -10,7 +11,8 @@
   },
   {
     "username": "test",
-    "passwordHash": "test",
+    "passwordHash": "f38823001006c1614e85a8f4dd23f641d676f3af8a52430f1ae5f0099e5dd4b1",
+    "salt": "902604c7224fbbc8b2e3381e14273b6d",
     "balance": 1000.0,
     "holdings": {
       "USD": 1000.0
