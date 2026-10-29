@@ -1,11 +1,15 @@
 package org.example;
 
 import java.util.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 
 public class Session {
 
     String username;
     String passwordHash;
+    String salt;
     double balance;
     HashMap<String, Double> holdings;
 
@@ -22,8 +26,25 @@ public class Session {
         return this.username;
     }
 
-    public String getPassword() {
-        return this.passwordHash;
+    public boolean checkPassword(String raw) {
+        return this.passwordHash.equals(hash(raw, this.salt));
+    }
+
+    public static String[] hashNewPassword(String raw) {
+        byte[] saltBytes = new byte[16];
+        new SecureRandom().nextBytes(saltBytes);
+        String salt = HexFormat.of().formatHex(saltBytes);
+        return new String[]{ hash(raw, salt), salt };
+    }
+
+    private static String hash(String raw, String salt) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            md.update(HexFormat.of().parseHex(salt));
+            return HexFormat.of().formatHex(md.digest(raw.getBytes()));
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public double getBalance() {

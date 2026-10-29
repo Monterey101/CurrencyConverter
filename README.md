@@ -64,8 +64,4 @@ Contributions should be done by cloning the repo via the `$ git clone` command a
 
 In older versions of this application, currency exchange data was pulled via [ExchangeRate-API](https://www.exchangerate-api.com). Due to requirement changes this was removed, however the local JSON database still uses the format of the API and can easily be reconnected. The application starts with exchange rates correct as of 5 September 2024 00:00. If you would like to connect this application to live rates you can do so using the following:
 
-__API Link__ | __API Key__  
-------------- | -------------
-https://www.exchangerate-api.com | f61de3dff24b4066809ff414
-
 For more information on this API check out the [docs](https://www.exchangerate-api.com/docs).
